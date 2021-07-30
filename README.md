@@ -46,3 +46,23 @@ configured at http://localhost:9000, jwt token are used for each api call.
 
 The application is built with latest version of Spring Boot 2.6.0 (SNAPSHOT), running with Java 11(works for Java 8 to Java 15 as well).
 
+Here are the checklists to the requirements:
+
+API requirements 
+-	Retrieve the current inventory (i.e. list of items) - **implement findAllItems, findItemById etc.**
+-	Buy an item (user must be authenticated) - **implement create purchase.**
+
+A couple questions to consider: 
+-	How do we know if a user is authenticated? - **user need to call authorization server to get a token, every call to resource server apis need verify the token(not expired, with right permit)**
+-	Is it always possible to buy an item? - **add a remainning column to item table to track the inventory, block the purchase and display out-of-stock message when item quantity not enough to fulfill the order.**
+
+Deliverables 
+1.	A runnable system with instructions on how to build/run your application - **README.me**
+a.	The application should be built using Java and the Spring framework - **Jave 11 with Spring boot 2.6.0 Snapshot**
+b.	The application should be able to be run from the command line without any dependencies or database’s required to run your application.  (Other than maven, gradle and Java) - **mvnw spring-boot:run**
+2.	A system that can process the two API requests via HTTP - **can be cal or test with curl or postman**
+3.	Appropriate tests (unit, integration etc) - **yes**
+4.	A quick explanation of: 
+a.	Your application, how you set it up, how it was built, how you designed the surge pricing and the type of architecture chosen. - **use https://start.spring.io/ to generate a skeleton, create the dto, service and controller layers and corresponding class, implement the surge pricing by adding a visit table to record the item visit history, with easy implementation and extention.**
+b.	Choice of data format. Include one example of a request and response. - **json**
+c.	What authentication mechanism was chosen, and why? - **spring security, spring authorization server and resource server, as the latest and most secured api service.**
