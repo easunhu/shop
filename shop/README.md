@@ -1,10 +1,9 @@
 
 Download and unzip the source repository, or clone it using Git: 
 git clone https://github.com/easunhu/shop.git
-cd into shop and run "mvnw spring-boot:run"
-cd into shop.authorization and run "mvnw spring-boot:run"
+cd into shop.authorization and run "mvnw spring-boot:run", wait until the server is running, then cd into shop and run "mvnw spring-boot:run"
 
-Now run the service with curl as below:
+Now both authorization and resource server are running, call the service with curl(or postman) as below:
 
 test 1.1) get read token, please update it to below token place>
 curl -X POST --user shop-client:secret http://localhost:9000/oauth2/token -d "grant_type=client_credentials&scope=shop:read"
