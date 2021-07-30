@@ -1,0 +1,21 @@
+{
+  "purchaseItems": [
+    {
+      "itemId": 1,
+      "price": 100,
+	  "quantity": 1
+    },
+    {
+      "itemId": 2,
+      "price": 200,
+	  "quantity": 2
+    },
+    {
+      "itemId": 3,
+      "price": 300,
+	  "quantity": 3
+    }
+  ],
+  "total": 1400,
+  "userId": 1
+}

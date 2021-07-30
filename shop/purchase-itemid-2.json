@@ -1,0 +1,11 @@
+{
+  "purchaseItems": [
+    {
+      "itemId": 2,
+      "price": 200,
+	  "quantity": 2
+    }
+  ],
+  "total": 400,
+  "userId": 2
+}
