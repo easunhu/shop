@@ -2,9 +2,6 @@
 Download and unzip the source repository, or clone it using Git: 
 git clone https://github.com/easunhu/shop.git
 cd into shop and run "mvnw spring-boot:run"
-
-Download and unzip the source repository, or clone it using Git:
-git clone https://github.com/easunhu/shop.authorization.git
 cd into shop.authorization and run "mvnw spring-boot:run"
 
 Now run the service with curl as below:
