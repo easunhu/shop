@@ -44,3 +44,5 @@ The shop's apis are secured and authorized by the Resource Server and the Author
 the Resource Server are configured at http://localhost:8080, while the Authorization Server are
 configured at http://localhost:9000, jwt token are used for each api call.
 
+The application is built with latest version of Spring Boot 2.6.0 (SNAPSHOT), running with Java 11(works for Java 8 to Java 15 as well).
+
